@@ -1,11 +1,19 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view/>
+ <p>voila</p>
 </template>
-
+<script>
+export default {
+  setup() {
+    console.log('will be called at first')
+  },
+  created() {
+    console.log('will be called second')
+  },
+  mounted() {
+    console.log('will be called third')
+  }
+}
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
